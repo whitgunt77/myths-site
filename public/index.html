@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mythology Bestiary</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@1.5.7/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Mythology Bestiary</h1>
+        <button onclick="goToRandomMonster()">Explore a Random Monster</button>
+        <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+      </header>
+
+      <figure>
+        <table class="stripped" role="grid">
+            <thead>
+                <tr>
+                    <th style="font-weight: 600;">Monster Name</th>
+                    <th style="font-weight: 600;">Origin</th>
+                    <th style="font-weight: 600;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Minotaur</td>
+                    <td>Greek Mythology</td>
+                    <td><a href="/monsters/minotaur.html">Read Entry</a></td>
+                </tr>
+                <tr>
+                    <td>The Hydra</td>
+                    <td>Greek Mythology</td>
+                    <td><a href="/monsters/hydra.html">Read Entry</a></td>
+                </tr>
+                <tr>
+                    <td>The Chimera</td>
+                    <td>Greek Mythology</td>
+                    <td><a href="/monsters/chimera.html">Read Entry</a></td>
+                </tr>
+                <tr>
+                    <td>Fenrir</td>
+                    <td>Norse Mythology</td>
+                    <td><a href="/monsters/fenrir.html">Read Entry</a></td>
+                </tr>
+                <tr>
+                    <td>Kappa</td>
+                    <td>Japanese Mythology</td>
+                    <td><a href="/monsters/kappa.html">Read Entry</a></td>
+                </tr>
+                <tr>
+                    <td>The Sphinx</td>
+                    <td>Egyptian/Greek Mythology</td>
+                    <td><a href="/monsters/sphinx.html">Read Entry</a></td>
+                </tr>
+                <tr>
+                    <td>The Wendigo</td>
+                    <td>Algonquian Mythology</td>
+                    <td><a href="/monsters/wendigo.html">Read Entry</a></td>
+                </tr>
+            </tbody>
+        </table>
+      </figure>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <section>
+          <h4>Mythology Bestiary</h4>
+          <p>
+            A curated collection of legendary creatures from folklore and across
+            the globe.
+          </p>
+        </section>
+        <section>
+          <h4>Navigation</h4>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#" onclick="window.scrollTo(0, 0)">Back to Top ⬆</a>
+            </li>
+            <li>
+              <a href="/about.html">About Project</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h4>Settings</h4>
+          <button class="theme-toggle" onclick="toggleTheme()">
+            Toggle Light/Dark Mode
+          </button>
+        </section>
+        <div class="footer-bottom">
+          <hr />
+          <small>&copy; 2026 Mythology Bestiary. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
